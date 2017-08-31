@@ -79,9 +79,15 @@ namespace ConsoleApp2
             static void Main()
             {
                 Console.SetWindowSize(60, 40);
+                Matrix instance;
+                for(int i = 0; i < 30; i++)
+                {
+                    instance = new Matrix(i * 2);
+                    new Thread(instance.Move).Start();
+                }
 
-
-                Console.WriteLine("Hello GitHub");
+                //Console.WriteLine("Hello GitHub");
+                Console.ReadKey();
             }
         }
     }
