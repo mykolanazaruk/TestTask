@@ -27,7 +27,7 @@ namespace ConsoleApp2
             int count;
             while (true)
             {
-                count = rand.Next(3, 6);
+                count = rand.Next(3, 10);
                 lenght = 0;
                 Thread.Sleep(rand.Next(20, 5000));
                 for (int i = 0; i < 40; i++)
@@ -69,7 +69,7 @@ namespace ConsoleApp2
                             Console.WriteLine(GetChar()); ;
 
                         }
-
+                        Thread.Sleep(2);
                     }
                 }
             }
@@ -78,7 +78,7 @@ namespace ConsoleApp2
         {
             static void Main()
             {
-                Console.SetWindowSize(60, 40);
+                Console.SetWindowSize(60, 44);
                 Matrix instance;
                 for(int i = 0; i < 30; i++)
                 {
